@@ -1,6 +1,8 @@
 package net.nablux.dockergen
 
-trait BaseImage {
+import net.nablux.dockergen.distributions.Debian
+
+trait BaseImage extends Debian {
   self: DockerImage =>
 
   // See http://phusion.github.io/baseimage-docker/ for documentation.
